@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Information</title>
+</head>
+<body>
+<script>
+    var userName = prompt("Who's there?");
+    alert(typeof(userName));
+    if (userName == 'Admin') {
+        var password = prompt("Enter password: ");
+        if (password == 'TheMaster') {
+            alert('Welcome');
+        } else if (password == '') {
+            alert('Canceled');
+        } else {
+            alert('Wrong password');
+        }
+    } else if (userName == '') {
+        alert('Canceled');
+    } else {
+        alert("I don't know you");
+    }
+</script>
+</body>
+</html>
